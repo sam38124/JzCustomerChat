@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F6F6F6"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@mipmap/app_btn_menu_n" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_menu_send" />
+
+        <EditText
+            android:id="@+id/sender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:hint="請輸入內容..."
+            android:maxHeight="200dp"
+            android:minHeight="40dp"
+            android:padding="5dp"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:padding="7dp"
+            app:srcCompat="@mipmap/app_btn_phot" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F6F6F6">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            app:srcCompat="@mipmap/app_icon_back" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/back"
+            android:text="@string/app_back"
+            android:textColor="@color/buttoncolor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Orange TPMS_Italy"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@mipmap/app_btn_call_n" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp" />
+    <TextView
+        android:id="@+id/newmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/s"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/circlered"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="收到新訊息"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/showimage"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_above="@id/s"
+        android:background="@android:color/background_light"
+        android:elevation="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/select"
+            android:src="@color/background" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+</RelativeLayout>

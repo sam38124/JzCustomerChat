@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:id="@+id/me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back"
+            android:visibility="gone">
+
+        <LinearLayout
+                android:id="@+id/oiu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/cornerblue"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+            <RelativeLayout
+                    android:id="@+id/sa2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/pome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:lineSpacingExtra="0sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textIsSelectable="true"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <com.orange.jzchi.jzframework.Widget.AspetRelate
+                    android:id="@+id/meimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    app:ratio="1.2">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/imageme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/background"
+                        android:scaleType="fitCenter"
+                        android:visibility="visible"
+                        app:placeholderImage="@drawable/field"
+                        fresco:viewAspectRatio="1" />
+            </com.orange.jzchi.jzframework.Widget.AspetRelate>
+
+        </LinearLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/oiu2">
+
+            <TextView
+                    android:id="@+id/timeme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="left|center"
+                    android:text="剛剛"
+                    android:textSize="12sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/you"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/oiu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/cornergray"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:id="@+id/sa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/po"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:lineSpacingExtra="0sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/app_name"
+                    android:textColor="@android:color/background_dark"
+                    android:textIsSelectable="true"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <com.orange.jzchi.jzframework.Widget.AspetRelate
+                android:id="@+id/youimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone"
+                app:ratio="1.2">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/background"
+                    android:scaleType="fitCenter"
+                    android:visibility="visible"
+                    app:placeholderImage="@drawable/field"
+                    fresco:viewAspectRatio="1" />
+            </com.orange.jzchi.jzframework.Widget.AspetRelate>
+        </LinearLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            fresco:failureImage="@drawable/admin2"
+            fresco:placeholderImage="@drawable/admin2"
+            fresco:roundAsCircle="true"
+            fresco:roundedCornerRadius="20dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/head"
+            android:text="人名"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/oiu">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="60dp"
+                android:gravity="left|center"
+                android:text="剛剛"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

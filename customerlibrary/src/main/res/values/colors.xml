@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="background">#EFEFF4</color>
+    <color name="select">#323643</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="Blue">#007AFF</color>
+    <color name="Black">#000000</color>
+    <color name="textcoloe">#6A6A6A</color>
+    <color name="tcolor">#1E5098</color>
+    <color name="dcolor">#315CA1</color>
+    <color name="sport">#17488E</color>
+</resources>
