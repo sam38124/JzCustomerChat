@@ -11,7 +11,7 @@ class AdminBeans {
         fun setMessageInstance(admin:String,password:String,callback: result){
             this.admin=admin
             this.password=password
-            FirebaseMessaging.getInstance().subscribeToTopic("").addOnCompleteListener {
+            FirebaseMessaging.getInstance().subscribeToTopic(admin).addOnCompleteListener {
                 callback.result(true)
             }.addOnFailureListener {
                 callback.result(false)
